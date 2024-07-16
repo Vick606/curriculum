@@ -47,7 +47,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 #### A note if your fonts are not loading
 
-  If you have any issues loading fonts with Webpack, the issue is not with Webpack, but how you declare the CSS rule.
+  If you have any issues loading fonts with Webpack, the issue is not with Webpack, but how you declare the CSS rule.cd 
+
+  Common issues and solutions:
+
+1. Incorrect path: Ensure your font file path is correct relative to your CSS file.
+2. Missing loader: Make sure you have the appropriate loader configured (like file-loader or url-loader).
+3. Incorrect CSS syntax: Use url() function in your CSS, not a direct path.
 
   Check out the answer on this question from Stack Overflow if you get stuck: [Webpack can't load fonts (ttf)](https://stackoverflow.com/questions/49877149/webpack-cant-load-fonts-ttf/68838464#68838464)
 
